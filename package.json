@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "encodeurl": "^1.0.2",
     "node-fetch": "^2.6.1",
     "node-tesseract-ocr": "^2.0.0"
   },

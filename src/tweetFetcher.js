@@ -1,9 +1,12 @@
 // import fetch from 'node-fetch';
 const fetch = require('node-fetch');
 const { Headers } = require('node-fetch');
+var encodeUrl = require('encodeurl')
 
 let getTweets = (query, callback) => {
-    fetch(`https://api.twitter.com/2/tweets/search/recent?query=${query}`, {
+  const urlEncoded = `https://api.twitter.com/2/tweets/search/recent?query=${encodeUrl(query)}`;
+  console.log('urlEncoded:', urlEncoded);
+    fetch(urlEncoded, {
       method: 'get',
       headers: new Headers({
         'Authorization': `Bearer ${process.env.BEARER_TOKEN}`,
