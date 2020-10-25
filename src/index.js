@@ -11,7 +11,7 @@ getTweets(query, (results) => {
  */
 
 
-recognize('./image.png', (text) => {
+recognize('./img/image.png', (text) => {
   console.log(text)
 })
 
