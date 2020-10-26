@@ -17,7 +17,7 @@ getTweets(query, (results) => {
  */
 
 
-recognize('./img/image1.png', (text) => {
+recognize('./img/image2.png', (text) => {
   console.log(text)
 
   const tweetParser = new Tweetparser(text)
