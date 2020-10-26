@@ -1,13 +1,15 @@
 {
-  "name": "twitter-to-url",
+  "name": "twitter-screenshot-to-url",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "encodeurl": "^1.0.2",
+    "jsesc": "^3.0.1",
     "node-fetch": "^2.6.1",
-    "node-tesseract-ocr": "^2.0.0"
+    "node-tesseract-ocr": "^2.0.0",
+    "open": "^7.3.0",
+    "openurl": "^1.1.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/S1GGEN/twitter-to-url.git"
+    "url": "git+https://github.com/S1GGEN/twitter-screenshot-to-url.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/S1GGEN/twitter-to-url/issues"
+    "url": "https://github.com/S1GGEN/twitter-screenshot-to-url/issues"
   },
-  "homepage": "https://github.com/S1GGEN/twitter-to-url#readme"
+  "homepage": "https://github.com/S1GGEN/twitter-screenshot-to-url#readme"
 }
