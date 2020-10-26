@@ -7,16 +7,6 @@ const Tweetparser = require('./Tweetparser')
 const getTweetURL = require("./getTweetURL");
 
 
-// let query='@eminO-17h british devs be like'
-const query='(from:casey) filmmaker, editor, youtuber friends'
-/*
-
-getTweets(query, (results) => {
-  console.log(results)
-})
- */
-
-
 recognize('./img/image2.png', (text) => {
   console.log(text)
 
@@ -30,7 +20,8 @@ recognize('./img/image2.png', (text) => {
 
   const query = cleanedLines[0]
 
-  getTweets(query, '',(results) => {
+  // TODO: Toggle for using username in query (bad OCR on username + username in query will result in no results)
+  getTweets(query, username,(results) => {
     // console.log(results)
     const tweetURL = getTweetURL(results)
     console.log('Opening', tweetURL)
@@ -40,14 +31,6 @@ recognize('./img/image2.png', (text) => {
     })
   })
 })
-
-
-
-/*
-recognize('./img/image2.png', (text) => {
-  console.log(text)
-})
- */
 
 
 
